@@ -14,11 +14,12 @@ export const getpaymentsService = async () => {
 };
 
 export const getpaymentsByIdService = async (id: number) => {
-  const payament: TSPayment | undefined = await db.query.payments.findFirst({
+  const payment: TSPayment | undefined = await db.query.payments.findFirst({
     where: eq(payments.paymentID, id),
   });
   return payment;
 };
+
 
 
 

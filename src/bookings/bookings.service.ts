@@ -1,6 +1,6 @@
 import db from "../drizzle/queries/db"; 
 import { eq } from "drizzle-orm";
-import { bookings } from "../drizzle//queries/schema";
+import { bookings } from "../drizzle/queries/schema";
 
 // Create a new booking
 export const createbookingsService = async (bookingData: typeof bookings.$inferInsert) => {

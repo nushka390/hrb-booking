@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
     "generate": "drizzle-kit generate",
     "migrate": "tsx src/drizzle/migrate.ts",
     "push": "drizzle-kit push",
@@ -23,12 +23,25 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@jest/globals": "^29.7.0",
     "@neondatabase/serverless": "^1.0.1",
     "bcryptjs": "^3.0.2",
     "dotenv": "^17.0.1",
     "drizzle-kit": "^0.31.4",
     "drizzle-orm": "^0.44.2",
     "express": "^5.1.0",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "@types/express": "^5.0.3",
+		"@types/jsonwebtoken": "^9.0.10",
+		"@types/nodemailer": "^6.4.7",
+		
+		
+		"jsonwebtoken": "^9.0.2",
+		"nodemailer": "^7.0.5",
+    "@types/bcryptjs": "^3.0.0",
+		"@types/jest": "^30.0.0",
+		
+		"jest": "^30.0.4",
+		"ts-jest": "^29.4.0"
   }
 }
